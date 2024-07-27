@@ -20,7 +20,7 @@ void main(List<String> args) {
 
   // FOR LOOPING
   //SYNTAX
-  //for (nilai awal; logika,( jika bernilai false perintah akan diulang ); increment/decrement){ masukkan perintah yang akan diulang di dalam blok ini }
+  //for (nilai awal; logika,( jika bernilai TRUE perintah akan diulang ); increment/decrement){ masukkan perintah yang akan diulang di dalam blok ini }
   for (int value = 0; value < 11; value++) {
     print('PERINTAH DALAM BLOK FOR :');
     print('NILAI VALUE ADALAH $value');
