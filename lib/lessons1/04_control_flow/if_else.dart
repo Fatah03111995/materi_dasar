@@ -10,6 +10,7 @@ void main(List<String> args) {
   final random = Random();
   int angkaRandom = random.nextInt(5); //5 adalah nilai maksimal
 
+  print('running sebelum if');
   if (angkaRandom == 1 || angkaRandom == 2) {
     // jika angkaRandom = 1 atau = 2, blok ini yang akan dijalankan
     print('angka 1 atau 2');
@@ -21,4 +22,5 @@ void main(List<String> args) {
 // akan masuk ke blok ini
     print('pasti angka 5');
   }
+  print('running setelah if');
 }
