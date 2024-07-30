@@ -23,6 +23,37 @@ void main(List<String> args) {
 
   //SOAL NOMER 2
   List<String> ubahJadiKapitalDiAwal = [];
+//CARA 1
+  List<String> ubahJadiKapitalCara1 = [];
+  for (int index = 0; index < namaSiswa.length; index++) {
+    String name = namaSiswa[index].toLowerCase();
+    String changedName = '';
+    for (int indexName = 0; indexName < name.length; indexName++) {
+      if (indexName == 0) {
+        changedName += name[indexName].toUpperCase();
+      }else {
+      changedName += name[indexName];  
+      }     
+    }
 
-  //TODO: LAKUKAN DENGAN FOR LOOP
+    ubahJadiKapitalCara1.add(changedName);
+  }
+
+  print(ubahJadiKapitalCara1);
+
+  //CARA 2
+  List<String> ubahJadiKapitalCara2 = [...namaSiswa.map((name){
+    List<String> splitName = name.toLowerCase().split('');
+    String changedName = '';
+    splitName.forEach((character){
+      if(character == splitName.first){
+        changedName += character.toUpperCase();
+      } else {
+     changedName += character; 
+    }
+    });
+  return changedName;
+  })];
+  
+  print(ubahJadiKapitalCara2);
 }
