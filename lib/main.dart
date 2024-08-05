@@ -1,4 +1,4 @@
-import 'package:coba/lessons1/01_variable/practice.dart';
+import 'package:coba/lessons1/06_function/function_part5.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +11,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(body: Lesson1Practice()),
+      home: Scaffold(body: PenerapanFunction()),
     );
   }
 }
